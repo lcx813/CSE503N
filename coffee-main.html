@@ -1,0 +1,60 @@
+<!DCTYPE html>
+<html>
+<head>
+<title>coffee main</title>
+<style type="text/css">
+body{
+        width: 760px; /* how wide to make your web page */
+        background-color: teal; /* what color to make the background */
+        margin: 0 auto;
+        padding: 0;
+        font:12px/16px Verdana, sans-serif; /* default font */
+}
+div#main{
+        background-color: #FFF;
+        margin: 0;
+        padding: 10px;
+}
+H1{
+    text-align:center;
+}
+</style>
+</head>
+
+
+<body>
+<div id="main">
+<h1>Rate Your Coffee</h1>
+<p>Please input the coffee you would like to find the past reviews</p>
+
+<form action="coffee-results.php" method="POST">
+<lable>Coffee:</lable>
+<textarea cols="55" rows= "1" name="coffee"> </textarea>
+<br />
+<input type="submit" value="submit" />
+</form>
+
+<p>Please input user, coffee name and rate</p>
+<form action="coffee-back-end.php" method="POST">
+<lable>User:</lable>
+<textarea cols="55" rows= "1" name="user"> </textarea>
+<br />
+<lable>Coffee:</lable>
+<textarea cols="55" rows= "1" name="coffee"> </textarea>
+<br />
+<lable>Rate:</lable>
+<input type="radio" name="userRating" value="1" checked>1
+<input type="radio" name="userRating" value="2">2
+<input type="radio" name="userRating" value="3">3
+<input type="radio" name="userRating" value="4">4
+<input type="radio" name="userRating" value="5">5
+<br/>
+<lable>Comments:</lable>
+<textarea cols="55" rows= "2" name="comments"> </textarea>
+<br/>
+
+
+<input type="submit" value="submit" />
+</form>
+
+</html>
