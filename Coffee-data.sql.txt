@@ -1,2 +1,4 @@
+create table coffees(id int unsigned not null auto_increment,name varchar(50) not null,primary key(id))engine = INNODB DEFAULT character SET = utf8 COLLATE =utf8_general_ci;
+Query OK, 0 rows affected (0.01 sec)
 mysql> create table ratings( coffeeld int unsigned not null,user varchar(50) not null, rating decimal(1,1) not null,comment tinytext not null,foreign key (coffeeld) references coffees(id))engine = INNODB DEFAULT character SET = utf8 COLLATE =utf8_general_ci;
 Query OK, 0 rows affected (0.01 sec)
